@@ -170,7 +170,6 @@ export const mapAdvanceToDb = (advance: any): any => ({
 export const mapRevenueFromDb = (dbRevenue: any): any => ({
   id: dbRevenue.id,
   cropCycleId: dbRevenue.crop_cycle_id,
-  fertilizationProgramId: dbRevenue.fertilization_program_id,
   amount: dbRevenue.amount,
   date: dbRevenue.date,
   description: dbRevenue.description,
@@ -183,7 +182,6 @@ export const mapRevenueFromDb = (dbRevenue: any): any => ({
 
 export const mapRevenueToDb = (revenue: any): any => ({
   crop_cycle_id: revenue.cropCycleId,
-  fertilization_program_id: revenue.fertilizationProgramId,
   amount: revenue.amount,
   date: revenue.date,
   description: revenue.description,
